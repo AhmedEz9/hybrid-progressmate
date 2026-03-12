@@ -1,23 +1,29 @@
-# Yksilöprojekti: ProgressMate
+# Individual Project: ProgressMate 🚀
 
-## Kuvaus
+## Live Demo
 
-Toteutan web-sovelluksen, jonka avulla käyttäjä voi seurata edistymistään valitsemassaan taidossa tai projektissa (esim. kuntosaliharjoittelu, uuden kielen oppiminen tai remonttiprojekti). Sovellus toimii visuaalisena aikajanana, johon käyttäjä tallentaa kehityksensä vaiheita.
+Check out the live application here: [https://hybrid-progressmate-ahmed.netlify.app](https://hybrid-progressmate-ahmed.netlify.app)
 
-## Keskeiset toiminnot (MVP)
+## Description
 
-- **Merkintöjen lisäys:** Käyttäjä voi lisätä uuden "logauksen", joka sisältää otsikon, kuvauksen, päivämäärän ja kuvan.
-- **Listaus:** Merkinnät näkyvät kronologisessa järjestyksessä (aikajana).
-- **Kategoriat:** Mahdollisuus suodattaa merkintöjä tyypin mukaan.
+ProgressMate is a modern web application that allows users to track their progress in a chosen skill or project (e.g., MMA, gym training, or learning a new language). The app acts as a visual timeline where users can log stages of their development using images and text.
 
-## Tekninen toteutus
+## Key Features
 
-- **Frontend:** React + TypeScript.
-- **Tyylittely:** Hyödynnän CSS-frameworkia Tailwind tai Mantine.
-- **Backend:** Alkuvaiheessa käytän kurssin tarjoamaa REST-taustapalvelua.
+- **User Management (Auth):** Secure login, logout, and protected routes.
+- **Full CRUD:** Users can create, read, update, and delete their own progress logs (image, title, description).
+- **Visual Timeline:** Entries are displayed in an elegant chronological order.
+- **Profile Dashboard:** A beautiful summary page showing user statistics and activity.
+- **Real-time Search:** Built-in search functionality to instantly filter milestones.
+- **Premium UI/UX:** Fully responsive design, "Glassmorphism" theme, smooth loading animations, and modern Toast notifications for instant user feedback.
 
-## Tavoitetaso
+## Technical Implementation
 
-Jos aikataulu sallii, laajennan projektia loppuvaiheessa toteuttamalla oman tietokannan tai siirtämällä sovelluksen Next.js-alustalle.
+- **Frontend:** React + TypeScript + Vite
+- **Styling:** Tailwind CSS
+- **State Management & Routing:** React Context API & React Router DOM
+- **Backend:** Course-provided REST API
 
-> > > > > > > 20fb22c7272bfd56dd435af9bf54dcfd8b105965
+## Deployment
+
+The application is deployed on **Netlify** using a production build optimized for speed and performance.
