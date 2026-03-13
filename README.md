@@ -1,29 +1,56 @@
 # Individual Project: ProgressMate 🚀
 
-## Live Demo
-
-Check out the live application here: [https://hybrid-progressmate-ahmed.netlify.app](https://hybrid-progressmate-ahmed.netlify.app)
-
 ## Description
 
-ProgressMate is a modern web application that allows users to track their progress in a chosen skill or project (e.g., MMA, gym training, or learning a new language). The app acts as a visual timeline where users can log stages of their development using images and text.
+ProgressMate is a modern web application that allows users to track their progress in a chosen skill or project (e.g., gym training, or learning a new language). The app acts as a visual timeline where users can log stages of their development using images and text.
 
-## Key Features
+## Live Demo & Links
 
-- **User Management (Auth):** Secure login, logout, and protected routes.
-- **Full CRUD:** Users can create, read, update, and delete their own progress logs (image, title, description).
-- **Visual Timeline:** Entries are displayed in an elegant chronological order.
-- **Profile Dashboard:** A beautiful summary page showing user statistics and activity.
-- **Real-time Search:** Built-in search functionality to instantly filter milestones.
-- **Premium UI/UX:** Fully responsive design, "Glassmorphism" theme, smooth loading animations, and modern Toast notifications for instant user feedback.
+- **Live Application (Front-end):** [https://hybrid-progressmate-ahmed.netlify.app](https://hybrid-progressmate-ahmed.netlify.app)
+- **Back-end APIs:**
+  - Media API: `https://media2.edu.metropolia.fi/media-api/api/v1`
+  - Auth API: `https://media2.edu.metropolia.fi/auth-api/api/v1`
+  - Upload API: `https://media2.edu.metropolia.fi/upload-api/api/v1`
+- **API Documentation & Repositories:** - [Auth Server Repository](https://github.com/AhmedEz9/progressmate-auth)
+  - [Media API Repository](https://github.com/AhmedEz9/progressmate-media)
+  - [Upload Server Repository](https://github.com/AhmedEz9/progressmate-upload)
 
-## Technical Implementation
+## Test User Credentials
 
-- **Frontend:** React + TypeScript + Vite
+To test the application features, you can log in with the following test account:
+
+- **Username:** TestLogin
+- **Password:** admin1234
+
+## Screenshots
+
+- **Dashboard:** ![Dashboard](./screenshots/dashboard.png)
+- **Upload View:**
+  ![Upload](./screenshots/upload.png)
+- **User Profile:**
+  ![Profile](./screenshots/profile.png)
+
+## Features Implemented
+
+- **User Management (Auth):** Secure login, registration, logout, and protected routes using JWT tokens.
+- **Full CRUD functionality:** Users can create, read, update, and delete their own progress logs.
+- **Visual Timeline:** Entries are displayed in chronological order on the home feed.
+- **Profile Dashboard:** A summary page showing user statistics (total logs) and user details.
+- **Real-time Search:** Built-in search functionality to filter posts instantly.
+- **Premium UI/UX:** Responsive design, "Glassmorphism" styling, modern Toast notifications, and loading animations.
+
+## Database Description
+
+The application utilizes the provided course REST APIs. The database is a relational database containing:
+
+- **Users Table:** Stores user credentials, emails, and profile data (handled by Auth API).
+- **Media/Posts Table:** Stores the uploaded files (images/videos), titles, descriptions, and associates them with the `user_id` who created them (handled by Media and Upload APIs).
+
+## References & Libraries Used
+
+- **Framework:** React + Vite + TypeScript
 - **Styling:** Tailwind CSS
-- **State Management & Routing:** React Context API & React Router DOM
-- **Backend:** Course-provided REST API
-
-## Deployment
-
-The application is deployed on **Netlify** using a production build optimized for speed and performance.
+- **Icons:** Heroicons (`@heroicons/react`)
+- **Routing:** React Router DOM
+- **Forms & Validation:** Custom React hooks
+- **Deployment:** Netlify (Front-end)
