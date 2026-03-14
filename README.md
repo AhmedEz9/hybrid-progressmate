@@ -24,7 +24,8 @@ To test the application features, you can log in with the following test account
 
 ## Screenshots
 
-- **Dashboard:** ![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
+
 - **Upload View:**
   ![Upload](./screenshots/upload.png)
 - **User Profile:**
